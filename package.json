@@ -6,6 +6,7 @@
     "ccr": "./dist/cli.js"
   },
   "scripts": {
+    "start": "node dist/cli.js start",
     "build": "esbuild src/cli.ts --bundle --platform=node --outfile=dist/cli.js && shx cp node_modules/tiktoken/tiktoken_bg.wasm dist/tiktoken_bg.wasm"
   },
   "keywords": [
